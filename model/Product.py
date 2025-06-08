@@ -5,10 +5,10 @@ class Product:
     def __init__(self, 
                  product_id: UUID,
                  name: str,
-                 cost_per_dose: float,
+                 costPerDose: float,
                  thresholds: List[ProductThreshold]):
         self.id = product_id
         self.name = name
-        self.cost_per_dose = cost_per_dose
+        self.costPerDose = costPerDose
         self.thresholds = thresholds
         
