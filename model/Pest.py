@@ -1,0 +1,6 @@
+class Pest:
+    def __init__(self,
+                 pest_id: UUID,
+                 name: str):
+        self.id = pest_id
+        self.name = name
