@@ -1,3 +1,5 @@
+from uuid import UUID
+
 class Pest:
     def __init__(self,
                  pest_id: UUID,

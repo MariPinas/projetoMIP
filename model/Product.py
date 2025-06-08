@@ -1,5 +1,6 @@
 from typing import List
 from uuid import UUID
+from ProductThreshold import ProductThreshold
 
 class Product:
     def __init__(self, 

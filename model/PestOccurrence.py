@@ -1,8 +1,8 @@
 from uuid import UUID
 from datetime import datetime
 from typing import Tuple
-from model.Region import Region
-from model.Pest import Pest
+from Region import Region
+from Pest import Pest
 
 class PestOccurrence:
     def __init__(self,
