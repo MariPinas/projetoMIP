@@ -6,3 +6,6 @@ class Pest:
                  name: str):
         self.id = pest_id
         self.name = name
+    
+    def __str__(self):
+        return f"Pest: {self.pest_name}, Min: {self.minimum_occurrences}, Dose: {self.dose_per_hectare}"
