@@ -8,17 +8,17 @@ class PestOccurrence:
     def __init__(self,
                  occurrence_id: UUID,
                  pest: Pest,
-                 createdAt: datetime,
+                 created_at: datetime,
                  location : Tuple[float, float],
                  region: Optional['Region'] = None):
         self.id = occurrence_id
         self.region = region
         self.pest = pest
-        self.createdAt = createdAt
+        self.created_at = created_at
         self.location = location
     
     def get_occurrence_info(self) -> str:
-        return (f"[{self.createdAt.strftime('%Y-%m-%d %H:%M:%S')}] "
+        return (f"[{self.created_at.strftime('%Y-%m-%d %H:%M:%S')}] "
                 f"Praga: {self.pest.name}, Região: {self.region.name if self.region else 'Indefinida'}, "
                 f"Localização: ({self.location[0]}, {self.location[1]})")
 

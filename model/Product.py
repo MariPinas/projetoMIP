@@ -7,11 +7,11 @@ class Product:
     def __init__(self, 
                  product_id: UUID,
                  name: str,
-                 costPerDose: float,
+                 cost_per_dose: float,
                  thresholds: List[ProductThreshold]):
         self.id = product_id
         self.name = name
-        self.costPerDose = costPerDose
+        self.cost_per_dose = cost_per_dose
         self.thresholds = thresholds
         
     def get_threshold_for_pest(self, pest: Pest) -> 'ProductThreshold | None':
@@ -34,5 +34,5 @@ class Product:
 
     def calculate_cost(self, pest: Pest, occurrences: int, area: float) -> float:
         doses = self.calculate_dose(pest, occurrences, area)
-        return doses * self.costPerDose
+        return doses * self.cost_per_dose
 
