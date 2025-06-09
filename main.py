@@ -11,5 +11,10 @@ def main():
     
     resultado = prod1.get_threshold_for_pest(p1)
     print(resultado)
+    
+    print(prod1.should_apply(p1, 10))
+    print(prod1.calculate_dose(p1, 10, 10))
+    print(prod1.calculate_cost(p1, 10, 10))
+    
 if __name__ == '__main__':
     main()
