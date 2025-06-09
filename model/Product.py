@@ -1,6 +1,7 @@
 from typing import List
 from uuid import UUID
-from ProductThreshold import ProductThreshold
+from .product_threshold import ProductThreshold
+from .pest import Pest
 
 class Product:
     def __init__(self, 
@@ -12,4 +13,11 @@ class Product:
         self.name = name
         self.costPerDose = costPerDose
         self.thresholds = thresholds
+        
+    def get_threshold_for_pest(self, pest: Pest) -> 'ProductThreshold | None':
+        for threshold in self.thresholds:
+            if threshold.pest.name == pest.name:
+                return threshold
+        return None
+                
         

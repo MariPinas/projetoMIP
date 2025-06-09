@@ -8,4 +8,4 @@ class Pest:
         self.name = name
     
     def __str__(self):
-        return f"Pest: {self.pest_name}, Min: {self.minimum_occurrences}, Dose: {self.dose_per_hectare}"
+        return f"Pest: {self.name}"

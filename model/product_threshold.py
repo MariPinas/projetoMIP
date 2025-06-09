@@ -1,4 +1,4 @@
-from Pest import Pest
+from .pest import Pest
 
 class ProductThreshold:
     def __init__ (self,
