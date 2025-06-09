@@ -16,3 +16,11 @@ class PestOccurrence:
         self.pest = pest
         self.createdAt = createdAt
         self.location = location
+    
+    def get_occurrence_info(self) -> str:
+        return (f"[{self.createdAt.strftime('%Y-%m-%d %H:%M:%S')}] "
+                f"Praga: {self.pest.name}, Região: {self.region.name if self.region else 'Indefinida'}, "
+                f"Localização: ({self.location[0]}, {self.location[1]})")
+
+    def matches_pest(self, pest: Pest) -> bool:
+        return self.pest.id == pest.id
