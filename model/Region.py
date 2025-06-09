@@ -6,7 +6,7 @@ class Region:
     def __init__(self,
                  region_id: UUID,
                  name: str,
-                 size: float,
+                 size: Optional[float] = None,
                  parentRegion: Optional['Region'] = None):
         self.id = region_id
         self.name = name
