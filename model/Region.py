@@ -1,6 +1,6 @@
 from uuid import UUID
 from typing import Optional
-from .pest_occurance import PestOccurrence
+from .pest_occurrence import PestOccurrence
 
 class Region:
     def __init__(self,
