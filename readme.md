@@ -1,5 +1,6 @@
 # Projeto MIP
-
+## Linguagem escolhida: Python
+#### v3.11.7
 ### Resultado
 
 * ------ Recomendacoes de Aplicacao ------ * 
